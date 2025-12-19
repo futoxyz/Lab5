@@ -42,8 +42,8 @@ for sym in ["/", "\\", ":", "*", "?", '"', "<", ">", "|"]:
 При нахождении недопустимого символа программа возвращает ошибку пользователю.
 
 **Доказательства:**
-- [error1_debugger.png](https://github.com/futoxyz/Lab5/blob/main/errors/error1_debugger.png)
-- [error1_after.png](https://github.com/futoxyz/Lab5/blob/main/errors/error1_after.png)
+- [error1_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error1_debugger.png)
+- [error1_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error1_after.png)
 
 
 # Ошибка 2 — завершение программы при использованни grep
@@ -88,8 +88,8 @@ except:
 Команда не выдаёт ошибку при любом содержании проверяемого файла.
 
 **Доказательства:**
-- [error2_debugger.png](https://github.com/futoxyz/Lab5/blob/main/errors/error2_debugger.png)
-- [error2_after.png](https://github.com/futoxyz/Lab5/blob/main/errors/error2_after.png)
+- [error2_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error2_debugger.png)
+- [error2_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error2_after.png)
 
 # Ошибка 3 — Ошибка отката копирования каталога
 
@@ -124,8 +124,8 @@ shutil.move(self.sc_dir, os.path.join(self.init_dir, ".trash"))
 Удалить полностью можно только вручную, ведь программа это сама никак не сделает.
 
 **Доказательства:**
-- [error3_debugger.png](https://github.com/futoxyz/Lab5/blob/main/errors/error3_debugger.png)
-- [error3_after.png](https://github.com/futoxyz/Lab5/blob/main/errors/error3_after.png)
+- [error3_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error3_debugger.png)
+- [error3_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error3_after.png)
 
 # Ошибка 4 —
 **Место:**
