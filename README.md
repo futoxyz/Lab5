@@ -91,35 +91,36 @@ except:
 - [error2_debugger.png](https://github.com/futoxyz/Lab5/blob/main/errors/error2_debugger.png)
 - [error2_after.png](https://github.com/futoxyz/Lab5/blob/main/errors/error2_after.png)
 
+# Ошибка 3 — Ошибка отката копирования каталога
 
-# Ошибка 3 —
 **Место:**
 
-
+data.py, метод undo() класса Data.
 
 **Симптом:**
 
-
+При использовании undo после копирования каталога копия не всегда успешно удаляется на Windows.
 
 **Отладка:**
 
-
+Установлен breakpoint на строке с удалением каталога. Ошибку возвращает операционная система.
 
 **Причина:**
 
-
+Windows (в зависимости от характеристик) ограничивает удаление каталога через код.
 
 **Исправление:**
 
-
+Переместить копию в .trash/
 
 **Проверка:**
 
-
+Копия не удаляется полностью, а идет в корзину. Исходная директория, где лежала копия каталога, освобождается.
+Удалить полностью можно только вручную, ведь программа это сама никак не сделает.
 
 **Доказательства:**
-
-
+- [error3_debugger.png](https://github.com/futoxyz/Lab5/blob/main/errors/error3_debugger.png)
+- [error3_after.png](https://github.com/futoxyz/Lab5/blob/main/errors/error3_after.png)
 
 # Ошибка 4 —
 **Место:**
