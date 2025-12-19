@@ -112,6 +112,12 @@ Windows (в зависимости от характеристик) ограни
 **Исправление:**
 
 Переместить копию в .trash/
+```
+shutil.move(self.sc_dir, os.path.join(self.init_dir, ".trash"))
+```
+sc_dir - путь к копии
+
+os.path.join(self.init_dir, ".trash") - путь к .trash
 
 **Проверка:**
 
