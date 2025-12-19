@@ -33,7 +33,8 @@ for sym in ["/", "\\", ":", "*", "?", '"', "<", ">", "|"]:
 При нахождении недопустимого символа программа возвращает ошибку пользователю.
 
 **Доказательства:**
-
+- [error1_debugger.png](https://github.com/futoxyz/Lab5/blob/main/errors/error1_debugger.png)
+- [error1_after.png](https://github.com/futoxyz/Lab5/blob/main/errors/error1_after.png)
 
 
 # Ошибка 2 — завершение программы при использованни grep
