@@ -41,8 +41,8 @@ for sym in ["/", "\\", ":", "*", "?", '"', "<", ">", "|"]:
 При нахождении недопустимого символа программа возвращает ошибку пользователю.
 
 **Доказательства:**
-- [error1_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error1_debugger.png)
-- [error1_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error1_after.png)
+- [screenshots/error1_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error1_debugger.png)
+- [screenshots/error1_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error1_after.png)
 
 
 # Ошибка 2 — проблема чтения при использованни grep
@@ -87,8 +87,8 @@ except:
 Команда не выдаёт ошибку при любом содержании проверяемого файла.
 
 **Доказательства:**
-- [error2_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error2_debugger.png)
-- [error2_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error2_after.png)
+- [screenshots/error2_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error2_debugger.png)
+- [screenshots/error2_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error2_after.png)
 
 # Ошибка 3 — Ошибка отката копирования каталога
 
@@ -126,17 +126,17 @@ shutil.move(self.sc_dir, os.path.join(self.init_dir, ".trash"))
 Копия не удаляется полностью, а идет в корзину. Исходная директория, где лежала копия каталога, освобождается.
 
 **Доказательства:**
-- [error3_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error3_debugger.png)
-- [error3_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error3_after.png)
+- [screenshots/error3_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error3_debugger.png)
+- [screenshots/error3_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error3_after.png)
 
 # Ошибка 4 — Копирование и удаление пути вместо простого перемещения при вызове rm
 **Место:**
 
-execute.py, метод execute()
+execute.py, метод execute(), case rm.
 
 **Симптом:**
 
-Аналогично ошибке 3: код может вернуть ошибку удаления от Windows.
+Код может вернуть ошибку удаления от Windows.
 
 **Как воспроизвести:**
 
@@ -162,8 +162,8 @@ shutil.move(line.rm_dir, os.path.join(data.init_dir, ".trash"))
 ОС не вызывает ошибки, логика кода осталась неизменной.
 
 **Доказательства:**
-- [error4_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error4_debugger.png)
-- [error4_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error4_after.png)
+- [screenshots/error4_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error4_debugger.png)
+- [screenshots/error4_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error4_after.png)
 
 # Ошибка 5 — Проблема чтения с помощью cat.
 **Место:**
@@ -203,5 +203,5 @@ with open(line.file_dir, encoding='utf-8') as f:
 Программа дает ошибку вывода и не завершается.
 
 **Доказательства:**
-- [error5_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error5_debugger.png)
-- [error5_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error5_after.png)
+- [screenshots/error5_debugger.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error5_debugger.png)
+- [screenshots/error5_after.png](https://github.com/futoxyz/Lab5/blob/main/screenshots/error5_after.png)
